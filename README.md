@@ -104,10 +104,10 @@ Measures the relationship between **Unit Price** and **Total Amount**.
 ## 📂 Project Structure
 
 ```text
-ShopEase-Analytics/
+ShopEase-Analytics-Dashboard/
 │
 ├── app.py
-├── Group 9_Python_Project.ipynb
+├── Group_9_Python_Project.ipynb
 ├── requirements.txt
 ├── shopease_cleaned.csv
 ├── shopease_raw_orders.csv
@@ -121,13 +121,13 @@ ShopEase-Analytics/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git clone https://github.com/H-Mohanty77/Shopease-Analytics-Dashboard.git
 ```
 
 ### 2️⃣ Navigate to the Project
 
 ```bash
-cd YOUR-REPOSITORY
+cd Shopease-Analytics-Dashboard
 ```
 
 ### 3️⃣ Install Dependencies
