@@ -1,82 +1,102 @@
-# Shopease-Analytics-Dashboard
-A Python-based interactive analytics dashboard built with Streamlit to analyze ShopEase order and customer data.
+# 🛍️ ShopEase Analytics Dashboard
 
-The project provides interactive data filtering, business insights, statistical analysis, visualizations, and hypothesis testing through a user-friendly dashboard.
+An interactive **Python-based data analytics dashboard** built using **Streamlit** to analyze ShopEase customer and order data.
 
-##Project Overview
+---
 
-ShopEase Analytics Dashboard is designed to explore and analyze e-commerce order data.
+## 📌 About the Project
 
-Users can interact with the dashboard using filters such as:
+The **ShopEase Analytics Dashboard** is an interactive data analysis project designed to explore customer behavior, order patterns, revenue, ratings, and other business-related insights.
 
-City
-Product Category
-Gender
-Order Status
-Customer Age
-Unit Price
+The dashboard allows users to filter the dataset dynamically and analyze the resulting data through visualizations, descriptive statistics, and inferential statistical tests.
 
-The dashboard dynamically updates the results based on the selected filters.
+---
 
-✨ Features
-📊 Interactive Dashboard
-Dynamic filtering of customer and order data
-KPI cards showing key business metrics
-Interactive tabs for different types of analysis
-📈 Data Visualization
+## 🚀 Features
 
-The dashboard includes:
+* 🔍 Interactive data filtering
+* 💰 Total Revenue analysis
+* 🛒 Total Orders analysis
+* 💵 Average Order Value
+* ⭐ Average Customer Rating
+* 📊 Revenue by Category
+* 🏙️ Orders by City
+* 📈 Distribution of Total Amount
+* 📦 Category-wise Amount Analysis
+* ⭐ Rating Distribution
+* 🔗 Correlation Heatmap
+* 📉 Unit Price vs Total Amount analysis
+* 📋 Descriptive Statistics
+* 🔬 Statistical Hypothesis Testing
+* 📥 Download filtered data as CSV
 
-Revenue by Category
-Orders by City
-Total Amount Distribution
-Boxplot of Amount by Category
-Rating Distribution
-Correlation Heatmap
-Unit Price vs Total Amount Scatter Plot
-📋 Statistical Analysis
+---
 
-The project includes descriptive statistics for numerical variables such as:
+## 📊 Dashboard Analysis
 
-Customer Age
-Quantity
-Unit Price
-Discount
-Rating
-Total Amount
+### Key Performance Indicators
 
-It also provides categorical summaries for:
+The dashboard displays the following KPIs:
 
-Gender
-City
-Category
-Payment Method
-Order Status
-🔬 Inferential Statistics
+| Metric                 | Description                                      |
+| ---------------------- | ------------------------------------------------ |
+| 💰 Total Revenue       | Total revenue generated from the filtered orders |
+| 🛒 Total Orders        | Number of orders in the filtered dataset         |
+| 💵 Average Order Value | Average order amount                             |
+| ⭐ Average Rating       | Average customer rating                          |
 
-The dashboard performs several statistical tests:
+### Visualizations
 
-Independent Samples t-test
-ANOVA
-Chi-square test
-Pearson correlation
+The dashboard contains the following visualizations:
 
-These tests are used to explore relationships and differences within the dataset.
+* **Revenue by Category**
+* **Orders by City**
+* **Total Amount Distribution**
+* **Boxplot: Amount by Category**
+* **Rating Distribution**
+* **Correlation Heatmap**
+* **Unit Price vs Total Amount Scatter Plot**
 
-📥 Data Export
+---
 
-Users can download the currently filtered dataset as a CSV file directly from the dashboard.
+## 🔬 Statistical Analysis
 
-🛠️ Technologies Used
-Python
-Streamlit
-Pandas
-NumPy
-Matplotlib
-Seaborn
-SciPy
-Statsmodels
-📁 Project Structure
+The project applies multiple statistical techniques to understand relationships and differences within the data.
+
+### Independent Samples t-test
+
+Used to analyze whether there is a statistically significant difference in **Total Amount** between male and female customers.
+
+### ANOVA
+
+Used to analyze differences in **Total Amount** across different product categories.
+
+### Chi-square Test
+
+Used to examine the relationship between **Gender** and **Order Status**.
+
+### Pearson Correlation
+
+Used to measure the relationship between **Unit Price** and **Total Amount**.
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* Streamlit
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* SciPy
+* Statsmodels
+
+---
+
+## 📂 Project Structure
+
+```text
 ShopEase-Analytics/
 │
 ├── app.py
@@ -85,70 +105,60 @@ ShopEase-Analytics/
 ├── shopease_cleaned.csv
 ├── shopease_raw_orders.csv
 └── README.md
-⚙️ Installation
-1. Clone the repository
+```
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-2. Navigate to the project folder
+```
+
+### 2. Navigate to the Project Folder
+
+```bash
 cd YOUR-REPOSITORY
-3. Install the required libraries
+```
+
+### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
-🚀 Running the Dashboard
+```
 
-Run the following command in your terminal:
+---
 
+## ▶️ Run the Dashboard
+
+Start the Streamlit application using:
+
+```bash
 streamlit run app.py
+```
 
-Streamlit will start the application and provide a local URL that you can open in your browser.
+After running the command, Streamlit will provide a local URL where you can access the dashboard in your browser.
 
-📊 Dashboard KPIs
+---
 
-The dashboard displays four key metrics:
+## 📁 Dataset
 
-KPI	Description
-💰 Total Revenue	Sum of total order amounts
-🛒 Total Orders	Number of filtered orders
-💵 Average Order Value	Average total amount per order
-⭐ Average Rating	Average customer rating
-🔍 Statistical Tests
-Independent Samples t-test
+The project uses ShopEase order data containing information related to:
 
-Compares the Total Amount between male and female customers.
+* Customer Age
+* Gender
+* City
+* Category
+* Quantity
+* Unit Price
+* Discount
+* Rating
+* Total Amount
+* Payment Method
+* Order Status
+* Order Date
+* Delivery Date
 
-ANOVA
-
-Examines differences in Total Amount across product categories.
-
-Chi-square Test
-
-Examines the relationship between Gender and Order Status.
-
-Pearson Correlation
-
-Measures the relationship between Unit Price and Total Amount.
-
-📂 Dataset
-
-The project uses ShopEase order data containing customer, order, product, pricing, rating, and delivery-related information.
-
-The dashboard loads the cleaned dataset and converts the order and delivery date fields into datetime format for analysis.
-
-🎯 Project Objectives
-
-The main objectives of this project are to:
-
-Analyze ShopEase customer and order data.
-Identify patterns in revenue and orders.
-Explore customer ratings and purchasing behavior.
-Analyze relationships between numerical variables.
-Apply statistical techniques to business data.
-Build an interactive dashboard for data exploration.
-Allow users to filter and download relevant data.
-👥 Group 9
-
-Python Project — Group 9
-
-This project was developed as part of an academic Python/data analytics project.
-
-📜 License
-
-This project is intended for educational and academic purposes.
+The dashboard uses the cleaned d
