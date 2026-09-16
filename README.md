@@ -3,7 +3,7 @@ A Python-based interactive analytics dashboard built with Streamlit to analyze S
 
 The project provides interactive data filtering, business insights, statistical analysis, visualizations, and hypothesis testing through a user-friendly dashboard.
 
-#Project Overview
+##Project Overview
 
 ShopEase Analytics Dashboard is designed to explore and analyze e-commerce order data.
 
