@@ -107,7 +107,7 @@ Measures the relationship between **Unit Price** and **Total Amount**.
 ShopEase-Analytics-Dashboard/
 │
 ├── app.py
-├── Group_9_Python_Project.ipynb
+├── Group 9_Python_Project.ipynb
 ├── requirements.txt
 ├── shopease_cleaned.csv
 ├── shopease_raw_orders.csv
